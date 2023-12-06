@@ -10,5 +10,6 @@ export default {
     app.component('CustomColumn', CustomColumn);
     app.component('EleEasyTableEdit', EleEasyTableEdit);
     app.component('ProTable', ProTable);
+    app.component('TablePlus', ProTable);
   },
 };
