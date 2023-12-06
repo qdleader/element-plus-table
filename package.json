@@ -1,0 +1,60 @@
+{
+  "name": "element-plus-table",
+  "version": "1.0.2",
+  "private": false,
+  "author": "yk",
+  "description": "基于 Vue3、Element Plus 开发的一款表格组件，对Element Plus的el-table进行二次封装",
+  "keywords": [
+    "component",
+    "vue3",
+    "element plus",
+    "el-table"
+  ],
+  "license": "MIT",
+  "types": "./src/vue3-table.d.ts",
+  "main": "./dist/vue3-table.umd.min.js",
+  "module": "./dist/vue3-table.common.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue3-table.common.js",
+      "require": "./dist/vue3-table.umd.min.js"
+    }
+  },
+  "files": [
+    "dist/*.css",
+    "dist/*.map",
+    "dist/*.js",
+    "src/*"
+  ],
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "build-lib": "vue-cli-service build --target lib --name vue3-table --dest dist ./src/index.ts"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.1.0",
+    "core-js": "^3.29.1",
+    "element-plus": "^2.3.2",
+    "vue": "^3.2.47",
+    "vuedraggable": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/webpack-env": "^1.18.0",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-plugin-typescript": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "@vue/eslint-config-typescript": "^9.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "prettier": "^2.4.1",
+    "sass": "^1.69.5",
+    "sass-loader": "^13.3.2",
+    "typescript": "~4.5.5"
+  }
+}
