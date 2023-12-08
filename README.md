@@ -424,15 +424,11 @@ const columns = reactive<ColumnProps<User.ResUserList>[]>([
 
 # 搜索项 配置（SearchProps）：
 
-使用 v-bind="column.search.props“ 通过属性透传将 search.props 属性全部透传到每一项搜索组件上，所以我们支持 input、select、tree-select、date-packer、time-picker、time-select、switch 大部分属性，并在其基础上还扩展了以下 Props：
-
-# Column 配置（ColumnProps 属性）
-
 | 参数 | 类型 | 是否必填 | 默认值 | 描述| 
 | --------  | :-----:   | :-----:   | :-----:  | :----  |
 | el | String| 否 | - | 当前项搜索框的类型，支持：input、input-number、select、select-v2、tree-select、cascader、date-picker、time-picker、time-select、switch、slider）| 
 | labelString | String| 否 | - | 当搜索项 label，如果不指定默认取 column 的 label| 
-| props | Object| 否 | - | 根据 element plus 官方文档来传递，该属性所有值会透传到组件| 
+| props | Object| 否 | - | 根据 element plus 官方文档来传递，通过属性透传将 search.props 属性全部透传到每一项搜索组件上，所以我们支持 input、select、tree-select、date-packer、time-picker、time-select、switch 大部分属性| 
 | key | String| 否 | - | 当搜索项 key 不为 prop 属性时，可通过 key 指定| 
 | order | Number| 否 | - | 搜索项排序（从小到大）| 
 | key | String| 否 | - | 当搜索项 key 不为 prop 属性时，可通过 key 指定| 
