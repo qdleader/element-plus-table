@@ -49,7 +49,7 @@ export declare const CustomColumn: import("vue").DefineComponent<{
   defaultColumns?: string[]
 }>
 
-
+declare module "icourt-table"
 declare const _default: {
   install: (app: any) => void;
 };

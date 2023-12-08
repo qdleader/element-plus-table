@@ -1,6 +1,6 @@
 {
-  "name": "element-plus-table",
-  "version": "1.0.5",
+  "name": "icourt-table",
+  "version": "1.0.3",
   "private": false,
   "author": "yk",
   "description": "基于 Vue3、Element Plus 开发的一款表格组件，对Element Plus的el-table进行二次封装",
@@ -11,7 +11,7 @@
     "el-table"
   ],
   "license": "MIT",
-  "types": "./src/vue3-table.d.ts",
+  "types": "./dist/vue3-table.d.ts",
   "main": "./dist/vue3-table.umd.min.js",
   "module": "./dist/vue3-table.common.js",
   "exports": {

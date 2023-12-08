@@ -9,15 +9,15 @@
 ## 安装
 
 ```shell
-npm install element-plus-table -S
+npm install icourt-table -S
 ```
-
+npm i --save-dev @types/icourt-table      
 ## 项目中引入
 
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
-import TablePlus from "element-plus-table"
+import TablePlus from "icourt-table"
 
 const app = createApp(App);
 
