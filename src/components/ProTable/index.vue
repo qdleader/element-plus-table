@@ -237,12 +237,14 @@ flatColumns.value = flatColumnsFunc(tableColumns.value);
 // searchColumns.sort((a, b) => a.search!.order! - b.search!.order!);
 
 const flatSearchColumns = ref<ColumnProps[]>();
+// flatSearchColumns.value = flatColumnsFunc(
+//   props.tableSearchColumns?.length > 0
+//     ? tableSearchColumns.value
+//     : tableColumns.value
+// );
 flatSearchColumns.value = flatColumnsFunc(
-  props.tableSearchColumns?.length > 0
-    ? tableSearchColumns.value
-    : tableColumns.value
+  props.useTableSearchColumns ? tableSearchColumns.value : tableColumns.value
 );
-
 const searchColumns = flatSearchColumns.value.filter(
   (item) => item.search?.el || item.search?.render
 );

@@ -13,14 +13,12 @@ module.exports = defineConfig({
   configureWebpack: (config) => {
     config.plugins = [
       ...config.plugins,
-      AutoImport({
-        resolvers: [ElementPlusResolver()],
-      }),
-      Components({
-        resolvers: [ElementPlusResolver()],
-      }),
+      // AutoImport({
+      //   resolvers: [ElementPlusResolver()],
+      // }),
+      // Components({
+      //   resolvers: [ElementPlusResolver()],
+      // }),
     ]
-
-
   },
 })
