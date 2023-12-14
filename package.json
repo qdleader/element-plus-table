@@ -1,5 +1,5 @@
 {
-  "name": "element-plus-table",
+  "name": "icourt-table",
   "version": "1.0.7",
   "private": false,
   "author": "yk",
@@ -10,7 +10,6 @@
     "element plus",
     "el-table"
   ],
-  "repository": "https://github.com/qdleader/element-plus-table",
   "license": "MIT",
   "types": "./src/vue3-table.d.ts",
   "main": "./dist/vue3-table.umd.min.js",
